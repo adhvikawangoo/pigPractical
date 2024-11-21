@@ -42,17 +42,10 @@
     </div>
   </div> 
 </div>
-<h1>Pig Practical Help</h1>
+<h1>Pig Practical Simulator</h1>
 
 </body>
 </html>
-
-
-
-
-
-
-
 
 
 
@@ -87,14 +80,13 @@
 <body>
     <form id="questionForm">
         <!-- Text-based Question -->
-        <label for="textAnswer">What system is the thyroid part of?</label>
-        <input type="text" id="textAnswer" name="textAnswer" placeholder="Enter your answer here">
+        <label for="textAnswer">1. What system is the thyroid part of?</label> 
+        <input type="text" id="textAnswer" name="textAnswer" placeholder="Enter your answer here"><br><br>
 
         
 
         <!-- Multiple Choice Question -->
-        <fieldset>
-            <legend>Which of the following organs produce insulin and is apart of the digestive and endocrine system?</legend>
+            <label>2. Which of the following organs produce insulin and is apart <br> of the digestive and endocrine system?</label><br><br>
             <label>
                 <input type="radio" name="language" value="Python"> stomach
             </label>
@@ -103,10 +95,23 @@
             </label>
             <label>
                 <input type="radio" name="language" value="Car"> thyroid
+            </label> <br> <br>
+			
+		<!-- Multiple Choice Question -->
+            <label>3. What is the function of the lower esophageal sphincter? </label><br><br>
+            <label>
+                <input type="radio" name="language" value="Python"> stops HCL from going up esophagus <br>
             </label>
-        </fieldset>
+            <label>
+                <input type="radio" name="language" value="Elephant"> stops food from entering rectum <br>
+            </label>
+            <label>
+                <input type="radio" name="language" value="Car"> stops food from exiting body <br>
+            </label> <br>
 
-        <button type="button" class="submit-btn" onclick="handleSubmit()">Submit</button>
+		<img class = "piggy" src = "piggy.png" alt = "piggy" width = "420">
+
+        <br><br><button type="button" class="submit-btn" onclick="handleSubmit()">Submit</button>
     </form>
 
     <p id="result" style="font-weight: bold; margin-top: 20px;"></p>
@@ -114,24 +119,8 @@
 
 
 
-
-
-
-
-
-
-
-
     <script>
-        function handleSubmit() {
-            const textAnswer = document.getElementById("textAnswer").value;
-            const selectedRadio = document.querySelector('input[name="language"]:checked');
-            
-            let resultMessage = "Your answers:";
-           
-            
-            document.getElementById("result").innerHTML = resultMessage;
-        }
+        
     </script>
 </body>
 </html>
