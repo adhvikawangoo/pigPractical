@@ -1,36 +1,137 @@
 <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pigPractical.css">
+<style>
+
+
+
+</style>
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  
+  
+  
+  
+  <div class="dropdown">
+    <button class="dropbtn">Study Guide 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://mvhs.fuhsd.org/">Digestive</a>
+      <a href="https://mvhs.fuhsd.org/">Endocrine</a>
+      <a href="https://mvhs.fuhsd.org/">Respiratory</a>
+    </div>
+  </div> 
+  
+  
+  
+  
+  
+  <div class="dropdown">
+    <button class="dropbtn">Quiz 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://mvhs.fuhsd.org/">Digestive</a>
+      <a href="https://mvhs.fuhsd.org/">Endocrine</a>
+      <a href="https://mvhs.fuhsd.org/">Respiratory</a>
+    </div>
+  </div> 
+</div>
+<h1>Pig Practical Help</h1>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-   
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="pigPractical.css">
-	<script src="pigPractical.js"></script>
-    <title>Pig Practical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin: 20px;
+        }
+        form {
+       
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+         
+        }
+        .submit-btn {
+            
+        }
+    </style>
+    
+    
 </head>
 <body>
-	<div class="dropdownQuiz">
-	  <button class="dropbtnQuiz">Quiz</button>
-	  <div class="dropdown-contentQuiz">
-		<a href="#">Digestive System</a>
-		<a href="#">Endocrine System</a>
-		<a href="#">Lymphatic System</a>
-		<a href="#">Respiratory System</a>
-		<a href="#">Urinary System</a>
-		<a href="#">Circulatory System</a>
-	</div>
-	  
-	  
-	  
-	<div class="dropdownStudy">
-	  <button class="dropbtnStudy">Study Guides</button>
-	  <div class="dropdown-contentStudy">
-		<a href="#">Digestive System</a>
-		<a href="#">Endocrine System</a>
-		<a href="#">Lymphatic System</a>
-		<a href="#">Respiratory System</a>
-		<a href="#">Urinary System</a>
-		<a href="#">Circulatory System</a>
-	</div>
-	
-	
+    <form id="questionForm">
+        <!-- Text-based Question -->
+        <label for="textAnswer">What system is the thyroid part of?</label>
+        <input type="text" id="textAnswer" name="textAnswer" placeholder="Enter your answer here">
+
+        
+
+        <!-- Multiple Choice Question -->
+        <fieldset>
+            <legend>Which of the following organs produce insulin and is apart of the digestive and endocrine system?</legend>
+            <label>
+                <input type="radio" name="language" value="Python"> stomach
+            </label>
+            <label>
+                <input type="radio" name="language" value="Elephant"> pancreas
+            </label>
+            <label>
+                <input type="radio" name="language" value="Car"> thyroid
+            </label>
+        </fieldset>
+
+        <button type="button" class="submit-btn" onclick="handleSubmit()">Submit</button>
+    </form>
+
+    <p id="result" style="font-weight: bold; margin-top: 20px;"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function handleSubmit() {
+            const textAnswer = document.getElementById("textAnswer").value;
+            const selectedRadio = document.querySelector('input[name="language"]:checked');
+            
+            let resultMessage = "Your answers:";
+           
+            
+            document.getElementById("result").innerHTML = resultMessage;
+        }
+    </script>
 </body>
+</html>
