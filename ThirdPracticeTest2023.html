@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Third Practice Test 2023</title>
+    <script src="thirdPracticeTest2023.js"></script>
+  </head>
+  <body>
+    <BR>
+
+    <script>
+    document.write("createArray()  returns: " + createArray() + "<BR><BR>");
+	
+    document.write("nextTo100([100, 100, 8, 9, 8, 9, 8])  returns: " + nextTo100([100, 100, 8, 9, 8, 9, 8]) + "<BR>");
+    document.write("nextTo100([1, 8, 8, 8, 8, 8, 1, 100, 100])  returns: " + nextTo100([1, 8, 8, 8, 8, 8, 1, 100, 100]) + "<BR>");
+    document.write("nextTo100([])  returns: " + nextTo100([]) + "<BR>");
+    document.write("nextTo100([1, 2, 3, 4, 5, 100, 100, 6, 7, 9, 0])  returns: " + nextTo100([1, 2, 3, 4, 5, 100, 100, 6, 7, 9, 0]) + "<BR>");
+    document.write("nextTo100([2, 3, 4, 5, 4, 8, 4, 5, 3, 2, 1, 9])  returns: " + nextTo100([2, 3, 4, 5, 4, 8, 4, 5, 3, 2, 1, 9]) + "<BR>");
+    document.write("nextTo100([8, 9, 1, 1, 1, 1, 1, 1, 1, 9, 8])  returns: " + nextTo100([8, 9, 1, 1, 1, 1, 1, 1, 1, 9, 8]) + "<BR><BR>");
+	
+    document.write("increasingScores([8, 9, 8, 9, 8])  returns: " + increasingScores([8, 9, 8, 9, 8]) + "<BR>");
+    document.write("increasingScores([1, 8, 8, 8, 8, 8, 100, 100])  returns: " + increasingScores([1, 8, 8, 8, 8, 8, 100, 100]) + "<BR>");
+    document.write("increasingScores([5, 5])  returns: " + increasingScores([5, 5]) + "<BR>");
+    document.write("increasingScores([1, 2, 3, 4, 5, 6, 7, 9, 10])  returns: " + increasingScores([1, 2, 3, 4, 5, 6, 7, 9, 10]) + "<BR>");
+    document.write("increasingScores([2, 3, 4, 5, 1, 9])  returns: " + increasingScores([2, 3, 4, 5, 1, 9]) + "<BR>");
+    document.write("increasingScores([8, 9, 1, 1, 1, 1, 1, 1, 1, 9, 8])  returns: " + increasingScores([8, 9, 1, 1, 1, 1, 1, 1, 1, 9, 8]) + "<BR><BR>");
+	
+    document.write("averageArray([8, 9, 8, 8])  returns: " + averageArray([8, 9, 8, 8]) + "<BR>");
+    document.write("averageArray([1, 8, 8, 8, 8, 8, 100, 100])  returns: " + averageArray([1, 8, 8, 8, 8, 8, 100, 100]) + "<BR>");
+    document.write("averageArray([5, 5])  returns: " + averageArray([5, 5]) + "<BR>");
+    document.write("averageArray([2, 3, 4, 5, 6, 7, 9, 10])  returns: " + averageArray([2, 3, 4, 5, 6, 7, 9, 10]) + "<BR>");
+    document.write("averageArray([2, 3, 4, 5, 1, 9])  returns: " + averageArray([2, 3, 4, 5, 1, 9]) + "<BR>");
+    document.write("averageArray([8, 9, 1, 1, 1, 1, 1, 1, 9, 8])  returns: " + averageArray([8, 9, 1, 1, 1, 1, 1, 1, 9, 8]) + "<BR><BR>");
+	
+    document.write("countWords([\"JA\",\"VA\",\"AV\",\"JAV\"], 2)  returns: " + countWords(["JA","VA","AV","JAV"], 2) + "<BR>");
+    document.write("countWords([\"JA\",\"VA\",\"AV\",\"JAV\"], 3)  returns: " + countWords(["JA","VA","AV","JAV"], 3) + "<BR>");
+    document.write("countWords([\"JA\",\"VA\",\"AV\",\"JAV\"], 1)  returns: " + countWords(["JA","VA","AV","JAV"], 1) + "<BR>");
+    document.write("countWords([\"HEY\",\"STAY\",\"HAY\",\"BAY\"], 3)  returns: " + countWords(["HEY","STAY","HAY","BAY"], 3) + "<BR>");
+    document.write("countWords([\"a\",\"aa\",\"bb\",\"i\"], 1)  returns: " + countWords(["a","aa","bb","i"], 1) + "<BR>");
+    document.write("countWords([\"this\",\"bliss\",\"kiss\",\"miss\"], 5)  returns: " + countWords(["this","bliss","kiss","miss"], 5) + "<BR><BR>");
+	
+    document.write("doesHaveOne(6)  returns: " + doesHaveOne(6) + "<BR>");
+    document.write("doesHaveOne(28)  returns: " + doesHaveOne(28) + "<BR>");
+    document.write("doesHaveOne(51)  returns: " + doesHaveOne(51) + "<BR>");
+    document.write("doesHaveOne(610)  returns: " + doesHaveOne(610) + "<BR>");
+    document.write("doesHaveOne(1689)  returns: " + doesHaveOne(1689) + "<BR>");
+    document.write("doesHaveOne(496)  returns: " + doesHaveOne(496) + "<BR>");
+    document.write("doesHaveOne(33550336)  returns: " + doesHaveOne(33550336) + "<BR>");
+    document.write("doesHaveOne(8128)  returns: " + doesHaveOne(8128) + "<BR><BR>");
+	
+    document.write("repeatEnd(\"JAVA\", 2)  returns: " + repeatEnd("JAVA", 2) + "<BR>");
+    document.write("repeatEnd(\"Nice Work!\", 3)  returns: " + repeatEnd("Nice Work!", 3) + "<BR>");
+    document.write("repeatEnd(\"Monta Vista roolz\", 7)  returns: " + repeatEnd("Monta Vista roolz", 7) + "<BR>");
+    document.write("repeatEnd(\"Remove them all\", 1)  returns: " + repeatEnd("Remove them all", 1) + "<BR>");
+    document.write("repeatEnd(\"Silly goose!\", 4)  returns: " + repeatEnd("Silly goose!", 4) + "<BR>");
+    document.write("repeatEnd(\"APCS PRINCIPLES\", 3)  returns: " + repeatEnd("APCS PRINCIPLES", 3) + "<BR>");
+    document.write("repeatEnd(\"SPLENDID JOB\", 2)  returns: " + repeatEnd("SPLENDID JOB", 2) + "<BR><BR>");
+	
+    document.write("foundAgain(\"JAVAJAVA\", 2)  returns: " + foundAgain("JAVAJAVA", 2) + "<BR>");
+    document.write("foundAgain(\"Nice NicWork!\", 4)  returns: " + foundAgain("Nice NicWork!", 4) + "<BR>");
+    document.write("foundAgain(\"Monta Vista roolzMo\", 2)  returns: " + foundAgain("Monta Vista roolzMo", 2) + "<BR>");
+    document.write("foundAgain(\"Remove them Rall\", 1)  returns: " + foundAgain("Remove them Rall", 1) + "<BR>");
+    document.write("foundAgain(\"Silly goose!Sil\", 4)  returns: " + foundAgain("Silly goose!Sil", 4) + "<BR>");
+    document.write("foundAgain(\"APCS PRINCIPLESAPC\", 3)  returns: " + foundAgain("APCS PRINCIPLESAPC", 3) + "<BR>");
+    document.write("foundAgain(\"SPLENDIDSP JOB\", 2)  returns: " + foundAgain("SPLENDIDSP JOB", 2) + "<BR><BR>");
+	
+    document.write("starMatch(\"JA*A\")  returns: " + starMatch("JA*A") + "<BR>");
+    document.write("starMatch(\"Ni*i Wor*r\")  returns: " + starMatch("Ni*i Wor*r") + "<BR>");
+    document.write("starMatch(\"Mon*n Vis*s roo*z\")  returns: " + starMatch("Mon*n Vis*s roo*z") + "<BR>");
+    document.write("starMatch(\"Remo*o themy*yl\")  returns: " + starMatch("Remo*o themy*yl") + "<BR>");
+    document.write("starMatch(\"Sil*l goose!\")  returns: " + starMatch("Sil*l goose!") + "<BR>");
+    document.write("starMatch(\"APCS PRIN*N*NES\")  returns: " + starMatch("APCS PRIN*N*NES") + "<BR>");
+    document.write("starMatch(\"SPLENDID*JOB\")  returns: " + starMatch("SPLENDID*JOB") + "<BR><BR>");
+	
+    document.write("shuffle(\"JA*A\")  returns: " + shuffle("JA*A") + "<BR>");
+    document.write("shuffle(\"Ni*i Wor*r\")  returns: " + shuffle("Ni*i Wor*r") + "<BR>");
+    document.write("shuffle(\"Mon*n Vis*s roo*z\")  returns: " + shuffle("Mon*n Vis*s roo*z") + "<BR>");
+    document.write("shuffle(\"Remo*o themy*yl\")  returns: " + shuffle("Remo*o themy*yl") + "<BR>");
+    document.write("shuffle(\"Sil*l goose!\")  returns: " + shuffle("Sil*l goose!") + "<BR>");
+    document.write("shuffle(\"APCS PRIN*N*NES\")  returns: " + shuffle("APCS PRIN*N*NES") + "<BR>");
+    document.write("shuffle(\"SPLENDID*JOB\")  returns: " + shuffle("SPLENDID*JOB") + "<BR><BR>");
+    </script>
+	
+  </body>
+</html>

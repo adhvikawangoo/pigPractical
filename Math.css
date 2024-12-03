@@ -1,0 +1,60 @@
+html {
+  --primary: #0000DD;
+  --font: 'Andale Mono', 'Menlo', 'Courier New', Courier, monospace;
+  --dark: #222;
+  --gray: #D8D8D8;
+  --white: #FFF;
+  --darkGray: #A2A2A2;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(0, 300, 300);
+  font-family: var(--font);
+  background-repeat: no-repeat;
+  background-position: calc(100% + 150px) calc(100% + 50px);
+  background-size: 450px;
+  padding: 20px;
+}
+
+h1 {
+  color: black;
+  border-bottom: 5px solid black;
+  padding: 20px;
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+label {
+  margin: 20px;
+  color: var(--yellow);
+}
+
+input {
+  display: block;
+  font-family: var(--font);
+  font-size: 2em;
+  padding: 10px;
+  font-weight: 100;
+  border: 3px solid var(--black);
+  margin: 20px;
+  background-color: var(--white);
+  width: calc(100% - 65px);
+}
+
+#encrypted {
+  border-color: var(--dark);
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.mainContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+hr {
+  border: 3px solid black;
+  margin: 50px 0px;
+}
