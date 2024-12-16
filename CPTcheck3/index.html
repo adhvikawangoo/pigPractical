@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="pigPractical.css">
+<script src="pigPractical.js"></script>
+
+
+</head>
+<body style="background-color:black;">
+
+<div class="navbar">
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Digestive System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="digeStudy.html">Study Guide</a>
+      <a href="indexOne.html">Test</a>
+    </div>
+  </div>
+ 
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Skeletal System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="skeletalStudy.html">Study Guide</a>
+      <a href="skeletal.html">Test</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Respiratory System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="respirStudy.html">Study Guide</a>
+      <a href="respiratory.html">Test</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Endocrine System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="endoStudy.html">Study Guide</a>
+      <a href="endocrine.html">Test</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Lymphatic System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="lymphStudy.html">Study Guide</a>
+      <a href="lymphatic.html">Test</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Urinary System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="urinaryStudy.html">Study Guide</a>
+      <a href="urinary.html">Test</a>
+    </div>
+  </div>
+ 
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Circulatory System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="circStudy.html">Study Guide</a>
+      <a href="circulatory.html">Test</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button style="background-color:pink;" class="dropbtn">Reproductive System
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="reproStudy.html">Study Guide</a>
+      <a href="reproductive.html">Test</a>
+    </div>
+  </div>
+ 
+</div>
+<h1 style="color:pink;">Pig Practical Simulator</h1>
+<p class = "text"> This website acts as a simulator for the pig practical, <br>
+  a post pig dissection oral quiz that takes place in highschool<br>
+  biology. There are two game modes, one is the study guide, where <br>
+  the player has the ability to read notes about each part of the pig and <br>
+  study for the second game mode: the quiz. In the quiz the player will be given <br>
+  75 seconds to answer seven questions and each incorrect answer will result in a <br>
+  10 second penalty. Good Luck! </p>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+    </div>
+
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src=
+"pig1.jpg"
+                onclick="openModal('pig1.jpg')"
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"pig2.png"
+                onclick="openModal('pig2.png')"
+                alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="pig3.png"
+                onclick="openModal('pig3.png')"
+                alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"pig4.jpg"
+                onclick="openModal('pig4.jpg')"
+                alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="pig5.png"
+                onclick="openModal('pig5.png')"
+                alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src=
+"pig5.png"
+                onclick="openModal('pig5.jpg')"
+                alt="Image 5">
+        </div>
+        
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+</html>

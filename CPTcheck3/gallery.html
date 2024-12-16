@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Display Images from Array</title>
+</head>
+
+<body>
+    <h1 style="color: green;">
+        GeeksforGeeks
+    </h1>
+    
+    <h1>Display Images from Array using a Loop</h1>
+    
+    <div id="image-container"></div>
+    
+    <script>
+        const images = [
+"pig1.png",
+"pig2.png",
+'pig3.png'
+        ];
+    
+        const container = document.getElementById('image-container');
+    
+        for (let i = 0; i < images.length; i++) {
+            const img = document.createElement('img');
+            img.src = images[i];
+            container.appendChild(img);
+        }
+    </script>
+</body>
+
+</html>
